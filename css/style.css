@@ -323,3 +323,42 @@ ul.leaders li:after {
   border-left: 2px dotted;
   transform: translate(-50%);
 }
+
+
+.unstyled ul {
+  list-style: none;
+  padding: 0em;
+}
+
+/* Font Awesome SVGs sans JavaScript */
+.fa,
+.fas,
+.far,
+.fal,
+.fad,
+.fab {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fa {
+  width: 1em;
+  height: 1em;
+}
+
+.fa-twitter {
+  background: url(/img/twitter.svg);
+}
+
+a .fa-twitter {
+  background: url(/img/twitter-link.svg);
+}
+
+.fa-envelope {
+  background: url(/img/envelope.svg);
+}
+
+a .fa-envelope {
+  background: url(/img/envelope-link.svg);
+}
