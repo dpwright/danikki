@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>駄日記</title>
+    <link href="http://jp.dpwright.com/atom.xml" rel="self" />
+    <link href="http://jp.dpwright.com" />
+    <id>http://jp.dpwright.com/atom.xml</id>
+    <author>
+        <name>Daniel P. Wright</name>
+        <email>dani@dpwright.com</email>
+    </author>
+    <updated>{{{更新時間}}}</updated>
+    {{#投稿}}
+    <entry>
+        <title>{{投稿名}}</title>
+        <link href="http://jp.dpwright.com/{{投稿番号}}" />
+        <id>http://jp.dpwright.com/{{投稿番号}}</id>
+        <published>{{投稿日ISO}}</published>
+        {{#更新日ISO}}<updated>{{更新日ISO}}</updated>{{/更新日ISO}}
+        {{^更新日ISO}}<updated>{{投稿日ISO}}</updated>{{/更新日ISO}}
+        <summary type="html"><![CDATA[<h1 id="postid">第{{回目}}回</h1>
+{{#投稿名}}<h1 id="posttitle">{{投稿名}}</h1>
+{{/投稿名}}{{{内容}}}]]></summary>
+    </entry>
+    {{/投稿}}
+</feed>

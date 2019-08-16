@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap&subset=japanese');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:300&display=swap&subset=japanese');
+
+/* Settings */
+:root {
+  --max-content-width: 1250px;
+  --max-content-height: 550px;
+  --base-font-size: 16pt;
+  --code-font-size: 0.8em;
+  --post-id-size: 0.75em;
+  --post-title-size: 1.5em;
+  --post-headings-size: 1.25em;
+  --post-subheadings-size: 1.1em;
+  --index-count-size: 0.8em;
+  --index-post-id-size: 0.5em;
+
+  --header-base-size: 1.5em;
+  --header-vertical-offset: 3em;
+  --header-navigation-size: 0.5em;
+  --header-tags-size: 0.25em;
+
+  --big-logo-size: 5em;
+  --main-menu-items-size: 0.8em;
+}
+
+:root {
+  --bg-colour: #f0f1f3;
+  --fg-colour: #706662;
+  --link-colour: #9e1309;
+
+  --logo-bg-colour: #ece0d4;
+  --logo-fg-colour: #69110a;
+  --logo-border-colour: #69110a;
+
+  --code-border-colour: #706662;
+  --code-bg-colour: #f5f6f8;
+  --code-fg-colour: #706662;
+}
+
+/* Layout */
+html {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: 'Noto Serif JP', serif;
+  font-size: var(--base-font-size);
+  color: var(--fg-colour);
+  background-color: var(--bg-colour);
+}
+
+em {
+  font-style: normal;
+  text-emphasis: filled;
+}
+
+p {
+  text-align: justify;
+  text-indent: 1em;
+  line-height: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-colour);
+}
+
+code {
+  font-size: var(--code-font-size);
+  font-family: 'Noto Sans JP', monospace;
+}
+
+p code {
+  background-color: var(--code-bg-colour);
+  border: 1px solid var(--code-border-colour);
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+pre {
+  background-color: var(--code-bg-colour);
+  border: 1px solid var(--code-border-colour);
+  color: var(--code-fg-colour);
+  padding: 0.5em;
+  overflow: scroll;
+  font-family: 'Noto Sans JP', monospace;
+}
+
+/* Full-width colons look wrong with Noto Serif */
+span.standard-mincho {
+  font-family: serif;
+}
+
+h1#postid {
+  white-space: nowrap;
+  font-size: var(--post-id-size);
+  padding: 0;
+  margin: 0;
+}
+
+h1#posttitle {
+  font-size: var(--post-title-size);
+  margin-right: 0;
+}
+
+h2 {
+  font-size: var(--post-headings-size);
+  font-weight: bold;
+}
+
+h3 {
+  font-size: var(--post-subheadings-size);
+  font-weight: bold;
+}
+
+.verse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.verse p {
+  white-space: pre;
+}
+
+section#header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 90%;
+
+  font-size: var(--header-base-size);
+  max-height: calc(var(--max-content-height) + var(--header-vertical-offset));
+  max-width: var(--max-content-width);
+  pointer-events: none;
+  z-index: 2;
+}
+
+div#menu {
+  margin-right: 3em;
+  height: 100%;
+  width: 0px;
+  white-space: nowrap;
+  pointer-events: auto;
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  justify-content: space-between;
+}
+
+div#menu > div {
+  display: flex;
+  justify-content: flex-start;
+}
+
+h1.logo {
+  display: flex;
+  flex-grow: 0;
+  margin: 0em;
+  padding: 0.2em;
+  font-weight: normal;
+  font-size: 1em;
+  border-style: double;
+  white-space: nowrap;
+  background-color: var(--logo-bg-colour);
+  color: var(--logo-fg-colour);
+  border-color: var(--logo-border-colour);
+}
+
+ul#navigation {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.5em;
+  line-height: 1em;
+}
+
+ul#navigation li {
+  display: flex;
+  font-size: var(--header-navigation-size);
+}
+
+ul#tags {
+  display: flex;
+  flex-shrink: 1;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  writing-mode: horizontal-tb;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.5em;
+}
+
+ul#tags li {
+  display: flex;
+  font-size: var(--header-tags-size);
+}
+
+div#mainmenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+h1.biglogo {
+  display: flex;
+  margin: 0em;
+  padding: 0.2em;
+  font-weight: normal;
+  font-size: var(--big-logo-size);
+  border: 10px double var(--logo-border-colour);
+  border-radius: 5px;
+  white-space: nowrap;
+  background-color: var(--logo-bg-colour);
+  color: var(--logo-fg-colour);
+}
+
+ul#mainmenuitems {
+  display: flex;
+  flex-direction: column;
+  writing-mode: horizontal-tb;
+  vertical-align: middle;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.5em;
+  font-size: var(--main-menu-items-size);
+}
+
+ul#mainmenuitems li {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+section#content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  height: var(--max-content-height);
+  max-width: 100%;
+  max-height: 80%;
+}
+
+@media only screen and (min-width: 1250px) {
+  section#content {
+    max-width: var(--max-content-width);
+  }
+}
+
+div.padding {
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+section#footer {
+  position: relative;
+  height: 100%;
+}
+
+p#postdate {
+  position: absolute;
+  text-align: right;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+ul.leaders {
+  max-width: 100%;
+  padding: 0;
+  overflow-x: hidden;
+  list-style: none;
+}
+
+ul.leaders li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+ul.leaders li span {
+  background: var(--bg-colour);
+  display: flex;
+  white-space: nowrap;
+}
+
+ul.leaders span:first-child {
+  padding-bottom: 0.5em;
+  align-items: center;
+  align-content: center;
+}
+
+ul.leaders span.postid {
+  display: flex;
+  font-size: var(--index-post-id-size);
+}
+
+ul.leaders span + span {
+  padding-top: 0.5em;
+  font-size: var(--index-count-size);
+}
+
+ul.leaders li:after {
+  content:"";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 2px dotted;
+  transform: translate(-50%);
+}

@@ -1,0 +1,3 @@
+[submodule "出力"]
+	path = 出力
+	url = https://github.com/dpwright/danikki.git

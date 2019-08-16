@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>駄日記　{{タイトル}}　投稿一覧</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+  </head>
+  <body>
+    <section id="header">
+      <div id="menu">
+        <a href="/メニュー"><h1 class="logo">駄日記</h1></a>
+      </div>
+    </section>
+    <section id="content">
+      <div class="padding">
+          <h1 id="postid">投稿一覧</h1>
+          <h1 id="posttitle">{{タイトル}}</h1>
+          {{#節}}
+          <h2>{{節}}</h2>
+          <ul class="leaders">
+              {{#投稿}}
+              <li>
+                  {{#投稿名}}
+                  <span><span class="postid">第{{回目}}回</span>　<a href="/{{投稿番号}}">{{投稿名}}</a></span>
+                  {{/投稿名}}
+                  {{^投稿名}}
+                  <span><a href="/{{投稿番号}}">第{{回目}}回</a></span>
+                  {{/投稿名}}
+                  <span>
+                      {{#年を表示}}{{年}}{{/年を表示}}{{#月を表示}}{{月}}{{/月を表示}}{{日}}
+                  </span>
+              </li>
+              {{/投稿}}
+          </ul>
+          {{/節}}
+          {{^節}}
+          <ul class="leaders">
+              {{#投稿}}
+              <li>
+                  {{#投稿名}}
+                  <span><span class="postid">第{{回目}}回</span>　<a href="/{{投稿番号}}">{{投稿名}}</a></span>
+                  {{/投稿名}}
+                  {{^投稿名}}
+                  <span><a href="/{{投稿番号}}">第{{回目}}回</a></span>
+                  {{/投稿名}}
+                  <span>
+                      {{#年を表示}}{{年}}{{/年を表示}}{{#月を表示}}{{月}}{{/月を表示}}{{日}}
+                  </span>
+              </li>
+              {{/投稿}}
+          </ul>
+          {{/節}}
+          <section id="footer">
+          </section>
+      </div>
+    </section>
+  </body>
+</html>
