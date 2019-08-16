@@ -1,6 +1,8 @@
 const md = require('markdown-it')({ html: true })
   .use(require("markdown-it-inline-comments"))
   .use(require("markdown-it-html-entities"))
+  .use(require("markdown-it-fontawesome"))
+  .use(require("markdown-it-container"), 'unstyled')
   .use(require("markdown-it-container"), 'verse');
 
 var fs = require('fs');
