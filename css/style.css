@@ -17,6 +17,7 @@
   --header-base-size: 1.5em;
   --header-vertical-offset: 3em;
   --header-navigation-size: 0.5em;
+  --header-icons-size: 0.4em;
   --header-tags-size: 0.25em;
 
   --big-logo-size: 5em;
@@ -185,6 +186,26 @@ ul#navigation {
 ul#navigation li {
   display: flex;
   font-size: var(--header-navigation-size);
+}
+
+ul#icons {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.5em;
+  line-height: 0.675em;
+}
+
+ul#icons li {
+  display: flex;
+  font-size: var(--header-icons-size);
+}
+
+ul#icons img {
+  width: 1em;
+  height: 1em;
 }
 
 ul#tags {
@@ -365,4 +386,12 @@ a .fa-twitter {
 
 a .fa-envelope {
   background: url(/img/envelope-link.svg);
+}
+
+.fa-rss-square {
+  background: url(/img/rss-square.svg);
+}
+
+a .fa-rss-square {
+  background: url(/img/rss-square-link.svg);
 }
