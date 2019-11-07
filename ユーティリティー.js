@@ -1,9 +1,25 @@
-const md = require('markdown-it')({ html: true })
+const md = require('markdown-it')({
+    html: true,
+    replaceLink: function (link, env) {
+      // Find all absolute links
+      var r = new RegExp('^(?:[a-z]+:)?/?/', 'i');
+      if(r.test(link)) {
+        return link;
+      } else {
+        return "/" + link
+      }
+    }
+  })
   .use(require("markdown-it-inline-comments"))
   .use(require("markdown-it-html-entities"))
   .use(require("markdown-it-fontawesome"))
   .use(require("markdown-it-container"), 'unstyled')
   .use(require("markdown-it-container"), 'verse')
+  .use(require('markdown-it-replace-link'))
+  .use(require("markdown-it-implicit-figures"), {
+    figcaption: true,
+    link: true
+  })
   .use(require("markdown-it-hashtag"),{
     // This would be much nicer but required 'markdown-it-hashtag' to pass 'u' to the regex
     // hashtagRegExp: '\\p{L}+',

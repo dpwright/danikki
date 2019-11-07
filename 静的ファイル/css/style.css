@@ -36,6 +36,10 @@
   --code-border-colour: #706662;
   --code-bg-colour: #f5f6f8;
   --code-fg-colour: #706662;
+
+  --img-border-colour: #706662;
+  --img-border-hover-colour: #9e1309;
+  --img-bg-colour: #f5f6f8;
 }
 
 /* Layout */
@@ -353,6 +357,32 @@ ul.leaders li:after {
 .unstyled ul {
   list-style: none;
   padding: 0em;
+}
+
+figure {
+  display: inline-flex;
+  align-items: center;
+  margin: 0em;
+  padding: 0.25em;
+  background: var(--img-bg-colour);
+  border: 2px solid var(--img-border-colour);
+  max-width: 400px;
+  max-height: 100%;
+}
+
+figcaption {
+  writing-mode: horizontal-tb;
+  font-size: 0.5em;
+}
+
+figure a {
+  max-width: inherit;
+  max-height: inherit;
+}
+
+figure img {
+  max-width: inherit;
+  max-height: inherit;
 }
 
 /* Font Awesome SVGs sans JavaScript */
