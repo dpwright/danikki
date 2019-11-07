@@ -3,7 +3,13 @@ const md = require('markdown-it')({ html: true })
   .use(require("markdown-it-html-entities"))
   .use(require("markdown-it-fontawesome"))
   .use(require("markdown-it-container"), 'unstyled')
-  .use(require("markdown-it-container"), 'verse');
+  .use(require("markdown-it-container"), 'verse')
+  .use(require("markdown-it-hashtag"),{
+    // This would be much nicer but required 'markdown-it-hashtag' to pass 'u' to the regex
+    // hashtagRegExp: '\\p{L}+',
+    hashtagRegExp: '!?(?:\\w|[^\\u0000-\\u007F])+',
+    preceding:     '^|\\s'
+  });
 
 var fs = require('fs');
 var Mustache = require('mustache');
@@ -11,6 +17,11 @@ var kansuji = require('kansuji');
 var kanjidate = require("kanjidate");
 
 const execSync = require('child_process').execSync;
+
+md.renderer.rules.hashtag_open  = function(tokens, idx) {
+  var tagName = tokens[idx].content;
+  return '<a href="/' + tagName + '" class="hashtag">';
+}
 
 const PluginUtility = {
   '初期化': {

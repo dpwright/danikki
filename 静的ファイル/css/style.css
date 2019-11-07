@@ -116,6 +116,10 @@ h6 {
   display: none;
 }
 
+.hashtag {
+  display: none;
+}
+
 .verse {
   display: flex;
   align-items: center;
