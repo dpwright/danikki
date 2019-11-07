@@ -11,7 +11,7 @@
     <updated>{{{更新時間}}}</updated>
     {{#投稿}}
     <entry>
-        <title>第{{回目}}回{{#投稿名}}　{{投稿名}}{{/投稿名}}</title>
+        <title>{{^投稿名}}第{{回目}}回{{/投稿名}}{{#投稿名}}{{投稿名}}{{/投稿名}}</title>
         <link href="http://jp.dpwright.com/{{投稿番号}}" />
         <id>http://jp.dpwright.com/{{投稿番号}}</id>
         <published>{{投稿日}}</published>
