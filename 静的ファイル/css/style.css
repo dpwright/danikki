@@ -97,7 +97,7 @@ h1#postid {
   margin: 0;
 }
 
-h1#posttitle {
+h1 {
   font-size: var(--post-title-size);
   margin-right: 0;
 }
@@ -110,10 +110,6 @@ h2 {
 h3 {
   font-size: var(--post-subheadings-size);
   font-weight: bold;
-}
-
-h6 {
-  display: none;
 }
 
 .hashtag {
