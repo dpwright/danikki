@@ -14,9 +14,8 @@
         <title>第{{回目}}回{{#投稿名}}　{{投稿名}}{{/投稿名}}</title>
         <link href="http://jp.dpwright.com/{{投稿番号}}" />
         <id>http://jp.dpwright.com/{{投稿番号}}</id>
-        <published>{{投稿日ISO}}</published>
-        {{#更新日ISO}}<updated>{{更新日ISO}}</updated>{{/更新日ISO}}
-        {{^更新日ISO}}<updated>{{投稿日ISO}}</updated>{{/更新日ISO}}
+        <published>{{投稿日}}</published>
+        {{#更新日}}<updated>{{更新日}}</updated>{{/更新日}}{{^更新日}}<updated>{{投稿日}}</updated>{{/更新日}}
         <summary type="html"><![CDATA[{{{内容}}}]]></summary>
     </entry>
     {{/投稿}}

@@ -10,6 +10,8 @@ var Mustache = require('mustache');
 var kansuji = require('kansuji');
 var kanjidate = require("kanjidate");
 
+const execSync = require('child_process').execSync;
+
 const PluginUtility = {
   '初期化': {
     type: 'func',
@@ -45,6 +47,32 @@ const PluginUtility = {
     }
   },
 
+  '作成日付': {
+    type: 'func',
+    josi: [['の']],
+    fn: function (path) {
+      let date = execSync('git log --diff-filter=A --format=format:%aI -1 ' + path);
+      if(date.length > 0) {
+        return date.toString();
+      } else {
+        return undefined;
+      }
+    }
+  },
+
+  '更新日付': {
+    type: 'func',
+    josi: [['の']],
+    fn: function (path) {
+      let date = execSync('git log --diff-filter=U --format=format:%aI -1 ' + path);
+      if(date.length > 0) {
+        return date.toString();
+      } else {
+        return undefined;
+      }
+    }
+  },
+
   '漢数字変換': {
     type: 'func',
     josi: [['を', 'の']],
@@ -56,10 +84,11 @@ const PluginUtility = {
   '元号変換': {
     type: 'func',
     josi: [['を', 'の']],
-    fn: function (date) {
-      let month = date[1];
-      let day = date[2];
-      let jpyear = kanjidate.toGengou(date[0], month, day);
+    fn: function (isodate) {
+      var date = new Date(isodate)
+      let month = date.getMonth() + 1;
+      let day = date.getDate();
+      let jpyear = kanjidate.toGengou(date.getFullYear(), month, day);
       if(jpyear.nen == 1) {
         var year = "元";
       } else {
