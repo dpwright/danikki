@@ -8,7 +8,7 @@
         <name>Daniel P. Wright</name>
         <email>dani@dpwright.com</email>
     </author>
-    <updated>2019-11-23T00:00:00.000Z</updated>
+    <updated>2019-11-25T00:00:00.000Z</updated>
     <entry>
         <title>このブログの作成</title>
         <link href="http://jp.dpwright.com/1" />
@@ -341,7 +341,9 @@
         <id>http://jp.dpwright.com/4</id>
         <published>2019-11-23T09:14:55+09:00</published>
         <updated>2019-11-23T09:14:55+09:00</updated>
-        <summary type="html"><![CDATA[<figure><a href="/img/9da95ec912473bfd82880651452e3f12fcc3c525.jpg"><img src="/img/9da95ec912473bfd82880651452e3f12fcc3c525.jpg" alt=""></a></figure>
+        <summary type="html"><![CDATA[<div class="gallery">
+<figure><a href="/img/9da95ec912473bfd82880651452e3f12fcc3c525.jpg"><img src="/img/9da95ec912473bfd82880651452e3f12fcc3c525.jpg" alt=""></a></figure>
+</div>
 <p><a href="/京都" class="hashtag">#京都</a> <a href="/八坂神社" class="hashtag">#八坂神社</a> <a href="/日本" class="hashtag">#日本</a> <a href="/写真" class="hashtag">#写真</a> <a href="/どこでも伊右衛門" class="hashtag">#どこでも伊右衛門</a></p>
 ]]></summary>
     </entry>
