@@ -385,6 +385,27 @@ figure img {
   max-height: inherit;
 }
 
+.gallery {
+  margin: 0em;
+  background: var(--img-bg-colour);
+  border: 2px solid var(--img-border-colour);
+}
+
+.gallery ul {
+  list-style: none;
+  padding: 0em;
+  margin: 0em;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.gallery figure {
+  max-width: none;
+  border: none;
+  background: none;
+}
+
 /* Font Awesome SVGs sans JavaScript */
 .fa,
 .fas,

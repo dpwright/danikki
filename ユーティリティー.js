@@ -15,6 +15,7 @@ const md = require('markdown-it')({
   .use(require("markdown-it-fontawesome"))
   .use(require("markdown-it-container"), 'unstyled')
   .use(require("markdown-it-container"), 'verse')
+  .use(require("markdown-it-container"), 'gallery')
   .use(require('markdown-it-replace-link'))
   .use(require("markdown-it-implicit-figures"), {
     figcaption: true,
