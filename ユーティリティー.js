@@ -11,6 +11,7 @@ const md = require('markdown-it')({
     }
   })
   .use(require("markdown-it-inline-comments"))
+  .use(require("markdown-it-ruby"))
   .use(require("markdown-it-html-entities"))
   .use(require("markdown-it-fontawesome"))
   .use(require("markdown-it-container"), 'unstyled')
