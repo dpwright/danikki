@@ -79,7 +79,7 @@ const PluginUtility = {
     type: 'func',
     josi: [['の']],
     fn: function (path) {
-      let date = execSync('git log --diff-filter=A --format=format:%aI -1 ' + path);
+      let date = execSync('git log --diff-filter=A --format=format:%aI --follow -1 ' + path);
       if(date.length > 0) {
         return date.toString();
       } else {
