@@ -127,6 +127,7 @@ h3 {
 }
 
 .verse p {
+  text-indent: 0;
   white-space: pre;
 }
 
