@@ -22,6 +22,8 @@
 
   --big-logo-size: 5em;
   --main-menu-items-size: 0.8em;
+
+  --ol-counter-size: 0.7em;
 }
 
 :root {
@@ -248,6 +250,36 @@ h1.biglogo {
   white-space: nowrap;
   background-color: var(--logo-bg-colour);
   color: var(--logo-fg-colour);
+}
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+
+ol li {
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+
+ol li::before {
+  content: counter(my-awesome-counter);
+  position: absolute;
+  top: -2.4em;
+  right: 0.2em;
+
+  writing-mode: horizontal-tb;
+  border: solid 1px var(--fg-colour);
+  border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  display: inline-block;
+  font-weight: bold;
+  font-size: var(--ol-counter-size);
+  text-align: center;
+  vertical-align: center;
+  line-height: 1.25em;
+  width: 1.25em;
 }
 
 ul#mainmenuitems {
