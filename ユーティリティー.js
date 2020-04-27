@@ -113,10 +113,15 @@ const PluginUtility = {
     type: 'func',
     josi: [['を', 'の']],
     fn: function (isodate) {
-      var date = new Date(isodate)
-      let month = date.getMonth() + 1;
-      let day = date.getDate();
-      let jpyear = kanjidate.toGengou(date.getFullYear(), month, day);
+      let date = new Date(isodate)
+      let timezoneInfo = /([+-]\d\d):(\d\d)/.exec(isodate)
+      let timezoneHours = Number(timezoneInfo[1])
+      let timezoneMinutes = timezoneHours * 60 + Number(timezoneInfo[2])
+      let timezoneOffset = timezoneMinutes * 60000;
+      let localDate = new Date(date.getTime() + timezoneOffset);
+      let month = localDate.getUTCMonth() + 1;
+      let day = localDate.getUTCDate();
+      let jpyear = kanjidate.toGengou(localDate.getUTCFullYear(), month, day);
       if(jpyear.nen == 1) {
         var year = "元";
       } else {
