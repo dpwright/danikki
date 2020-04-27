@@ -23,6 +23,6 @@
     "nadesiko3": "^3.0.61"
   },
   "scripts": {
-    "build": "ln -sf 投稿/0001.md generator.nako3 && cnako3 generator"
+    "build": "ln -sf 投稿/0001.md generator.nako3 && ./node_modules/nadesiko3/bin/cnako3 generator"
   }
 }
