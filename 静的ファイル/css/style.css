@@ -9,6 +9,7 @@
   --code-font-size: 0.8em;
   --post-id-size: 0.75em;
   --post-title-size: 1.5em;
+  --post-subtitle-size: 1.0em;
   --post-headings-size: 1.25em;
   --post-subheadings-size: 1.1em;
   --index-count-size: 0.8em;
@@ -99,6 +100,13 @@ span.standard-mincho {
 h1#postid {
   white-space: nowrap;
   font-size: var(--post-id-size);
+  padding: 0;
+  margin: 0;
+}
+
+h2#pre-subtitle {
+  white-space: nowrap;
+  font-size: var(--post-subtitle-size);
   padding: 0;
   margin: 0;
 }
