@@ -26,6 +26,11 @@ const md = require('markdown-it')({
     // hashtagRegExp: '\\p{L}+',
     hashtagRegExp: '!?(?:\\w|[^\\u0000-\\u007F])+',
     preceding:     '^|\\s'
+  })
+  .use(require("markdown-it-multimd-table"), {
+    multiline:  true,
+    rowspan:    true,
+    headerless: true
   });
 
 var fs = require('fs');

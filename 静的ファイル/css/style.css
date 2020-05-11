@@ -394,10 +394,13 @@ ul.leaders li:after {
   transform: translate(-50%);
 }
 
-
 .unstyled ul {
   list-style: none;
   padding: 0em;
+}
+
+table {
+  writing-mode: horizontal-tb;
 }
 
 figure {
