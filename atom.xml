@@ -8,7 +8,7 @@
         <name>Daniel P. Wright</name>
         <email>dani@dpwright.com</email>
     </author>
-    <updated>2020-05-05T07:00:00.000Z</updated>
+    <updated>2020-05-10T07:00:00.000Z</updated>
     <entry>
         <title>このブログの作成</title>
         <link href="http://jp.dpwright.com/1" />
@@ -546,6 +546,159 @@
 <p>「で、ペン先は？太い？細い？」</p>
 <p>最初の写真を観るとペン先はまぁ、行けるレベルかな？確かにこれがＥＦかと言われたらそこまでは言わないだろうが、モダンなペリカンよりはマシだと思います。実際に使ってみると、やっぱり持っているＴＷＳＢＩやパイロットよりは太いが、「太すぎる」という感じはしません。代わりに、書き心地はいい！とても使いやすい万年筆です。</p>
 <p><a href="/自宅退避" class="hashtag">#自宅退避</a> <a href="/購入" class="hashtag">#購入</a> <a href="/自宅退避中購入" class="hashtag">#自宅退避中購入</a> <a href="/万年筆" class="hashtag">#万年筆</a></p>
+]]></summary>
+    </entry>
+    <entry>
+        <title>自作キーボード</title>
+        <link href="http://jp.dpwright.com/11" />
+        <id>http://jp.dpwright.com/11</id>
+        <published>2020-05-10T21:05:30-07:00</published>
+        <updated>2020-05-10T21:05:30-07:00</updated>
+        <summary type="html"><![CDATA[<p>家に毎日引きこもる　自宅退避。</p>
+<p>「暇」と言ったらそうですが、ある意味チャンスです。「面白そうやけどそんなんやる暇はないわ」と、ずっと思ってたことに対しては…気付いたら、やる暇は出来たのではないですか！</p>
+<p>僕にはその一つは、「自分でメカニカルキーボードを作る」ということです。</p>
+<h2>なんで？</h2>
+<p>まずはやること自体は楽しいからです。プログラマーとして、「自分でものを作る」というのは普通の話ですが、作っているものは大体ソフトなので実際に手で触れるものではありません。実世界で何かを作るのは楽しそう！</p>
+<figure><a href="https://thicthock.com/products/aki-s?variant=32083605454953"><img src="/img/aki-s.png" alt="AKI-Sカスタムキーボード"></a><figcaption><a href="https://thicthock.com/products/aki-s?variant=32083605454953">AKI-Sカスタムキーボード</a></figcaption></figure>
+<p>もう一つは、自分でキーボードを作ると自分のこだわりにぴったり合わせることが出来ます。例えヨドバシカメラにいったらキーボードはいっぱい並んでありますが、良くみたら似ているものは多いんですね。自作だと、レイアウトも、デザインも、マテリアルや色も自分で決めて、世界中に一つしかない、ユニークなものになります。</p>
+<h2>どうやって？</h2>
+<p>今回は僕も初めてですので、色々調べながらやっていますが、大体下記の流れになりますかね。</p>
+<h3>デザイン</h3>
+<p>これは一番大事なステップです。ここで決めることによって、これからの選択肢に大きい影響されます。</p>
+<h4>サイズ</h4>
+<p>お店でキーボード買ったら基本的にテンキーがあるかないかという話ですね。自作だともっと、色んなサイズがあります。</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>Ergo</strong></td>
+<td style="text-align:center"><strong>フルサイズ</strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="/img/ergodox.jpg" alt=""></td>
+<td style="text-align:center"><img src="/img/fullsize.jpg" alt=""></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>60%</strong></td>
+<td style="text-align:center"><strong>95%</strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="/img/jis-60.jpg" alt=""></td>
+<td style="text-align:center"><img src="/img/jis-95.jpg" alt=""></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>40% Ortho</strong></td>
+<td style="text-align:center"><strong>テンキーレス</strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="/img/planck.jpg" alt=""></td>
+<td style="text-align:center"><img src="/img/jis-tkl.jpg" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p>他にもありますので、色々調べてから決めた方がおすすめです。ただし、サイズによって使えるレイアウトやケースなどが限られてくるのでご注意ください。</p>
+<p>ちなみに一番人気なのは６０％だそうです。フルサイズより小さく、持ちやすい形をしながら、小さすぎて不便になったりしないので、とても便利なサイズだと思います。自作じゃなくても普通に売っているモデルもあるから興味があれば是非お店で試してみてください——自宅退避終わったらね！</p>
+<h4>配列とレイアウト</h4>
+<p>サイズを決めてから次はレイアウトです。日本では「日本語配列」と「英語配列」という選択肢がよくありますが、実は「英語配列」というより、「アメリカ配列」と言った方が正しいかも知れません。それとは別で「国際配列」というものもあります。日本とアメリカ以外、ほとんどの国で使われているのはこれです。</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>日本配列（ＪＩＳ）</strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="/img/jis-fullsize.jpg" alt=""></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>国際配列（ＩＳＯ）</strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="/img/iso-fullsize.jpg" alt=""></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>アメリカ配列（ＡＮＳＩ）</strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="/img/ansi-fullsize.jpg" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p>この中でも色んな種類があります。例えば、スペインとイギリスはどちらもＩＳＯ配列ですが、スペインでは「ñ」キーがあり、イギリスでは「£」のがついています。同じ国際配列でも、キーの位置が一緒でも値は違いがあります。</p>
+<p>僕は日本の自作キーボードコミュニティが詳しくありませんが見たブログなどの上で日本語配列はあまり好まれていないという気がします。OrthoやANSIの方がよく使われているそうです。</p>
+<p>個人的な話をすれば、日本に７年間住んで、日本語配列を慣れてしまったのでできればそちらの方が使いたいのです。ダメだったらＩＳＯを選びます。現在アメリカに住んでいますが、やっぱりあのちっちゃい改行キーはいまだにイラッとします。ごめんなさい。</p>
+<p>…というわけで、今回は日本語配列を作る予定です！ただ、残念なことに、日本語配列は一番サポートされていない配列ですので、これを選んだことだけで選択肢がだいぶ減ってしまうのです。</p>
+<h4>キートップ</h4>
+<p>多くの人には多分、自作キーボードを作ろうと思った理由はこれです。自分でキートップの色やデザインを決められることですね。ここで自分のパーソナリティを表現できますし、とても楽しい悩みですよ。</p>
+<p>普通にアマゾンや楽天で買えるデザインもありますが、もっと面白いものを手に入るためには大体グループバイ（ＧＢ）で買う必要があります。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">現在行っているＩＣやＧＢ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="https://geekhack.org/index.php?topic=101678">ＧＭＫ　Ｓｐａｒｔａ</a></td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://geekhack.org/index.php?topic=101678"><img src="/img/gmk-sparta.png" alt=""></a></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="https://geekhack.org/index.php?topic=105842">ＫＡＴ初号機</a></td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://geekhack.org/index.php?topic=105842"><img src="/img/kat-shogoki.png" alt=""></a></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="https://geekhack.org/index.php?topic=106068">ＧＭＫマスターピース</a></td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://geekhack.org/index.php?topic=106068"><img src="/img/gmk-masterpiece.png" alt=""></a></td>
+</tr>
+</tbody>
+</table>
+<p>カスタムキーを作ってもらうのに、メーカーより最低注文量（ＭＯＱ）があります。それを通すため、デザイナーがオンラインでその人数を集めようとします。人数が足りてきたら、みんながお金を出して、メーカーにそのデザインを頼みます。これは「グループバイ」と呼ばれます。</p>
+<p>グループバイは基本的に時間限定なので、欲しいデザインがあったら早速買わないとチャンスがなくなるかも知れません。一方、「なくなるかも恐怖」に負けて買いすぎることも多いので、危ないですね！気をつけてください。</p>
+<p>ちなみに、キーセットの名前に「GMK」や「SA」みたいな、頭字語が先についていることがよく見ます。これは「キーキャッププロフィール」という意味をしています。キー自体の形ですね。</p>
+<figure><a href="/img/keycap-profiles.jpg"><img src="/img/keycap-profiles.jpg" alt="GeekHackからの引用です"></a><figcaption><a href="https://geekhack.org/index.php?topic=94475.0">GeekHack</a>からの引用です</figcaption></figure>
+<p>キープロフィールは好みの問題になりますのでおすすめは出来ませんが、普通のキーボードは大体ＯＥＭやCherryを使っていますので、「わからん！」と思う方にはこれが一番安全かも知れません。先言ったＧＨＫもCherryを使っています。</p>
+<p>もう一つの注意点があります。最近平仮名や片仮名の文字がついているデザインが流行っていますが、配列がアメリカと違うため、アメリカ配列にない「ろ」、「む」と「ー」のキーは入っていないか、適当に別の位置に置かれていることが多くあります。もし日本語配列のキーボードを作る予定であれば、かな文字を見たから安全だということはないのでキチッと確認してください。</p>
+<p>グループバイが終わってから基本作るまでは半年くらいかかります。待ちながらゆっくりデザイン考えましょう。</p>
+<h3>パーツの購入</h3>
+<p>イメージができたらパーツを買うことができます。調べ始めるとパーツが合わないせいで考えていたデザインができないことがかなりありますので、全部の確認ができるまでは購入を我慢した方がおすすめします。このステップでデザインのことを考え直す必要が良くあります、特に初心者には。</p>
+<h4>ＰＣＢ</h4>
+<p>おそらく一番大事なのはＰＣＢ（配線基板)です。これによってサイズとできるレイアウトが決まります。使いたい配列を参考しながらよく見比べてください。</p>
+<figure><a href="/img/gh60-layouts.jp2"><img src="/img/gh60-layouts.jp2" alt="僕が選んだＹＭＤＫのＧＨ６０が対応するレイアウト"></a><figcaption>僕が選んだ<a href="https://www.aliexpress.com/item/32799437588.html">ＹＭＤＫのＧＨ６０</a>が対応するレイアウト</figcaption></figure>
+<p>「Hotswap」をサポートしているＰＣＢであればスイッチを直接入れることができます。そうでなければハンダつけする必要がありますので、ハンダごてが必要になります。</p>
+<p>別のブログにＰＣＢの日本語配列対応についてもっと細かく書きたいと思いますが、とりあえず僕が選んだのはＧＨ６０というものです。</p>
+<h4>プレート</h4>
+<p>キーをしっかりとめるためです。ＡＮＳＩとＩＳＯをどっちも対応することが多いんですが、ＪＩＳは珍しいので気をつけてください。</p>
+<p>アルミ、真鍮、鋼鉄、カーボンファイバーのプレートによって、キーの打つ感じが変わります。音も変わりますね。僕が選んだレイアウトでは鋼鉄しかなかったのでそれにしました。</p>
+<h4>ケース</h4>
+<p>キーボードの見た目を決める上で、ケースはキートップの次に重要な要素です。選んだＰＣＢによって入るケースが変わりますし、ケースの形によって使える配列も変わることもあります。６０％は人気のあるサイズなのでケースの種類がいっぱいあります！</p>
+<h4>スイッチ</h4>
+<p>キーを打つときに音がでるかどうか、スムーズに動くか「パンプ」を感じるか、こういうことはスイッチによって決まります。有名なのはCherryの青、赤、茶色などですが、今は色んな会社が作っているので種類がすごく増えました。触ってみないと分からないのでできれば<a href="https://www.amazon.co.jp/Antkay-KBDFans/dp/B0811BSC1K">サンプラー</a>を頼んだ方がおすすめします。</p>
+<figure><a href="https://zealpc.net/collections/switches/products/zealio"><img src="/img/zealios2.jpeg" alt="ZealPCのZealio v2"></a><figcaption><a href="https://zealpc.net/collections/switches/products/zealio">ZealPCのZealio v2</a></figcaption></figure>
+<p>ほとんどのＰＣＢやキートップはCherry系のスイッチしか使えないので東プレやALPSを使うつもりであれば使えるかどうかのことだけを確認してください。</p>
+<p>スイッチがホントに奥が深いので、もっと細かい説明には<a href="https://salicylic-acid3.hatenablog.com/entry/switches-review">このページ</a>が参考になります。</p>
+<h4>キートップ</h4>
+<p>他のパーツが決めたら最終的な形が段々と想像できるようになります。ここでキーセットを細かく見て、必要なキーが全部入っているかどうかの確認ができます。大丈夫だと分かったら、ようやく注文ができます！</p>
+<h3>作成</h3>
+<p>パーツが全部集まったら作れます！僕はまだこのステップまでたどりついていないので今後にします。</p>
+<h2>まとめ</h2>
+<p>これはまだ初めてのキーボードですので間違ったり忘れたりしていることがあるかも知れません。今の段階では色々注文してから、待っている状態です。待っている間はもう次のキーボードを考えてしまいます。やっぱりハマってしまったんですね！危険です。</p>
+<p>では、またキーボードの話がしたいと思います。興味や質問があればぜひ<a href="https://twitter.com/kidviddy">ツイートしてください</a>。</p>
+<p><a href="/自宅退避" class="hashtag">#自宅退避</a> <a href="/自作キーボード" class="hashtag">#自作キーボード</a></p>
 ]]></summary>
     </entry>
 </feed>
