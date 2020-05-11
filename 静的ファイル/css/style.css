@@ -12,6 +12,7 @@
   --post-subtitle-size: 1.0em;
   --post-headings-size: 1.25em;
   --post-subheadings-size: 1.1em;
+  --post-subsubheadings-size: 1.0em;
   --index-count-size: 0.8em;
   --index-post-id-size: 0.5em;
 
@@ -124,6 +125,18 @@ h2 {
 h3 {
   font-size: var(--post-subheadings-size);
   font-weight: bold;
+}
+
+h4 {
+  font-size: var(--post-subsubheadings-size);
+  font-weight: bold;
+}
+
+h4::before {
+    display: inline-block;
+    border-right: .05em solid var(--fg-colour);
+    height: 2em;
+    content: "";
 }
 
 .hashtag {
