@@ -8,7 +8,7 @@
         <name>Daniel P. Wright</name>
         <email>dani@dpwright.com</email>
     </author>
-    <updated>2020-05-10T07:00:00.000Z</updated>
+    <updated>2020-05-11T07:00:00.000Z</updated>
     <entry>
         <title>このブログの作成</title>
         <link href="http://jp.dpwright.com/1" />
@@ -680,14 +680,14 @@
 <p>おそらく一番大事なのはＰＣＢ（配線基板)です。これによってサイズとできるレイアウトが決まります。使いたい配列を参考しながらよく見比べてください。</p>
 <figure><a href="/img/gh60-layouts.jp2"><img src="/img/gh60-layouts.jp2" alt="僕が選んだＹＭＤＫのＧＨ６０が対応するレイアウト"></a><figcaption>僕が選んだ<a href="https://www.aliexpress.com/item/32799437588.html">ＹＭＤＫのＧＨ６０</a>が対応するレイアウト</figcaption></figure>
 <p>「Hotswap」をサポートしているＰＣＢであればスイッチを直接入れることができます。そうでなければハンダつけする必要がありますので、ハンダごてが必要になります。</p>
-<p>別のブログにＰＣＢの日本語配列対応についてもっと細かく書きたいと思いますが、とりあえず僕が選んだのはＧＨ６０というものです。</p>
+<p>別のブログでＰＣＢの日本語配列対応についてもっと細かく書きたいと思いますが、とりあえず僕が選んだのはＧＨ６０というものです。</p>
 <h4>プレート</h4>
 <p>キーをしっかりとめるためです。ＡＮＳＩとＩＳＯをどっちも対応することが多いんですが、ＪＩＳは珍しいので気をつけてください。</p>
 <p>アルミ、真鍮、鋼鉄、カーボンファイバーのプレートによって、キーの打つ感じが変わります。音も変わりますね。僕が選んだレイアウトでは鋼鉄しかなかったのでそれにしました。</p>
 <h4>ケース</h4>
 <p>キーボードの見た目を決める上で、ケースはキートップの次に重要な要素です。選んだＰＣＢによって入るケースが変わりますし、ケースの形によって使える配列も変わることもあります。６０％は人気のあるサイズなのでケースの種類がいっぱいあります！</p>
 <h4>スイッチ</h4>
-<p>キーを打つときに音がでるかどうか、スムーズに動くか「パンプ」を感じるか、こういうことはスイッチによって決まります。有名なのはCherryの青、赤、茶色などですが、今は色んな会社が作っているので種類がすごく増えました。触ってみないと分からないのでできれば<a href="https://www.amazon.co.jp/Antkay-KBDFans/dp/B0811BSC1K">サンプラー</a>を頼んだ方がおすすめします。</p>
+<p>キーを打つときに音がでるかどうか、スムーズに動くか「バンプ」を感じるか、こういうことはスイッチによって決まります。有名なのはCherryの青、赤、茶色などですが、今は色んな会社が作っているので種類がすごく増えました。触ってみないと分からないのでできれば<a href="https://www.amazon.co.jp/Antkay-KBDFans/dp/B0811BSC1K">サンプラー</a>を頼んだ方がおすすめします。</p>
 <figure><a href="https://zealpc.net/collections/switches/products/zealio"><img src="/img/zealios2.jpeg" alt="ZealPCのZealio v2"></a><figcaption><a href="https://zealpc.net/collections/switches/products/zealio">ZealPCのZealio v2</a></figcaption></figure>
 <p>ほとんどのＰＣＢやキートップはCherry系のスイッチしか使えないので東プレやALPSを使うつもりであれば使えるかどうかのことだけを確認してください。</p>
 <p>スイッチがホントに奥が深いので、もっと細かい説明には<a href="https://salicylic-acid3.hatenablog.com/entry/switches-review">このページ</a>が参考になります。</p>
