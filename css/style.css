@@ -442,6 +442,11 @@ figure img {
   max-height: inherit;
 }
 
+figure video {
+  max-width: inherit;
+  max-height: inherit;
+}
+
 .gallery {
   margin: 0em;
   background: var(--img-bg-colour);
